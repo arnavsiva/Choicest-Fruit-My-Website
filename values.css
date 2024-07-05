@@ -42,3 +42,11 @@ body {
     background-color: white;
     color: black;
 }
+
+
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #257682;
+}
