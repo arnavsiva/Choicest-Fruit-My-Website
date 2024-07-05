@@ -1,10 +1,17 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    min-height: 100vh;
 }
 
 .header {
@@ -12,8 +19,9 @@ body {
     text-align: center;
     background: olivedrab;
     color: white;
+    width: 100%;
 }
-
+  
 .header h1 {
     font-size: 40px;
 }
@@ -21,8 +29,9 @@ body {
 .navbar {
     overflow: hidden;
     background-color: black;
+    width: 100%;
 }
-
+  
 .navbar a {
     float: left;
     display: block;
@@ -42,9 +51,97 @@ body {
     background-color: white;
     color: black;
 }
+  
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}  
+
+.side {
+    -ms-flex: 30%;
+    flex: 30%;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+  
+.main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+  
+img {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    width: 100%;
+}
+
+.container .value-card {
+    position: relative;
+    max-width: 300px;
+    height: 150px;
+    background: lightgoldenrodyellow;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 50px rgba(0,0,0,0.5);
+    transition: 0.4s ease-in-out;
+}
+
+.container .value-card:hover {
+    height: 300px;
+}
+
+.container .value-card .value-img {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top:-60px;
+    left:20px;
+    z-index: 1;
+    box-shadow: 0 3px 50px rgba(0,0,0,0.5);
+}
+
+.container .value-card .value-img img {
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+.container .value-card .detail {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color:black;
+    font-family: monospace;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.container .value-card:hover .detail {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+}
 
 .footer {
-    padding: 20px;
+    padding: 40px;
     text-align: center;
     background: #257682;
+    width: 100%;
 }
