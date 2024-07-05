@@ -142,3 +142,13 @@ section {
 .email-icon {
     height: 2.5rem;
 }
+
+.footer {
+    padding: 40px;
+    text-align: center;
+    background: #257682;
+}
+
+.footer p {
+    color: black;
+}
