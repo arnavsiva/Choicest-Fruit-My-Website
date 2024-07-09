@@ -5,13 +5,13 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .header {
@@ -21,7 +21,7 @@ body {
     color: white;
     width: 100%;
 }
-  
+
 .header h1 {
     font-size: 40px;
 }
@@ -31,7 +31,7 @@ body {
     background-color: black;
     width: 100%;
 }
-  
+
 .navbar a {
     float: left;
     display: block;
@@ -51,11 +51,12 @@ body {
     background-color: white;
     color: black;
 }
-  
-.row {  
+
+.row {
     display: flex;
     flex-wrap: wrap;
-}  
+    flex: 1;
+}
 
 .side {
     -ms-flex: 30%;
@@ -67,26 +68,27 @@ body {
 .hidden {
     display: none;
 }
-  
-.main {   
+
+.main {
     flex: 70%;
     background-color: white;
     padding: 20px;
 }
-  
+
 img {
-    background-color: #aaa;
     width: 100%;
     padding: 20px;
 }
 
 .container {
+    position: relative;
+    width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 30px;
-    width: 100%;
+    flex: 1;
 }
 
 .container .value-card {
@@ -98,7 +100,7 @@ img {
     padding: 20px 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 3px 50px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.5);
     transition: 0.4s ease-in-out;
 }
 
@@ -110,10 +112,10 @@ img {
     position: relative;
     width: 260px;
     height: 260px;
-    top:-60px;
-    left:20px;
+    top: -60px;
+    left: 20px;
     z-index: 1;
-    box-shadow: 0 3px 50px rgba(0,0,0,0.5);
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.5);
 }
 
 .container .value-card .value-img img {
@@ -126,7 +128,7 @@ img {
     margin-top: -140px;
     padding: 10px 15px;
     text-align: center;
-    color:black;
+    color: black;
     font-family: monospace;
     visibility: hidden;
     opacity: 0;
@@ -144,4 +146,5 @@ img {
     text-align: center;
     background: #257682;
     width: 100%;
+    margin-top: auto;
 }
