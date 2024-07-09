@@ -49,10 +49,12 @@ section {
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
-  }
-  
+}
+
 .section-container {
     display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 #profile {
@@ -114,23 +116,20 @@ section {
     border: white 0.1rem solid;
 }
 
-.btn-container {
-    gap: 1rem;
-}
-
 .about-containers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-}
-
-.about-containers {
-    display: flex;
+    width: 100%;
 }
 
 .details-container {
     padding: 1.5rem;
     flex: 1;
+    max-width: 300px;
     background: white;
     border-radius: 2rem;
     border: darkslategray 0.1rem solid;
@@ -176,6 +175,193 @@ article .icon {
     color: black;
 }
   
+.project-btn {
+    color: black;
+    border-color: grey;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #257682;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding: 80px;
+    text-align: center;
+    background: olivedrab;
+    color: white;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: black;
+}
+
+.navbar a.right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: black;
+}
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: darkslategray 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: white 0.1rem solid;
+}
+
+.about-containers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    max-width: 300px;
+    background: white;
+    border-radius: 2rem;
+    border: darkslategray 0.1rem solid;
+    border-color: gray;
+    text-align: center;
+}
+
+.section-container {
+    gap: 4rem;
+    height: 80%;
+}
+
+.article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+article .icon {
+    cursor: default;
+}
+
+#projects {
+    position: relative;
+}
+
+.color-container {
+    border-color: grey;
+    background: white;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-title {
+    margin: 1rem;
+    color: black;
+}
+
 .project-btn {
     color: black;
     border-color: grey;
