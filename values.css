@@ -148,3 +148,36 @@ img {
     width: 100%;
     margin-top: auto;
 }
+
+
+@media screen and (max-width: 780px) {
+
+    * {
+    box-sizing: border-box;
+    }
+    .container{
+    width:270px;
+    flex-direction: column;
+    position: relative;
+    
+    }
+    .container .value-card{    
+    height: 120px;   
+    
+    }  
+    .container .value-card .value-img{
+    position: relative;
+    width: 150px;
+    height: 200px;
+    top:-30px;
+    left:3px;
+    
+    } 
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+    float: none;
+    width: 100%;
+    }
+}

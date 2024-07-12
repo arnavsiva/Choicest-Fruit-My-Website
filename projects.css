@@ -372,3 +372,46 @@ article .icon {
     text-align: center;
     background: #257682;
 }
+
+@media screen and (max-width: 780px) {
+
+    .about-containers,
+    .contact-info-upper-container,
+    .btn-container {
+    flex-wrap: wrap;
+}
+.title {
+    font-size: 2rem;
+}
+
+#experience,
+.experience-details-container {
+    margin-top: 2rem;
+}
+
+section,
+.section-container {
+    height: fit-content;
+}
+
+section {
+    margin: 0 5%;
+}
+
+.section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+}
+
+.about-containers {
+    margin-top: 0;
+}
+}
+
+@media screen and (max-width: 400px) {
+    .navbar a {
+    float: none;
+    width: 100%;
+    }
+}
