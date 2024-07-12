@@ -38,10 +38,6 @@ body {
     padding: 14px 20px;
 }
 
-.navbar a.right {
-    float: right;
-}
-
 .navbar a:hover {
     background-color: white;
     color: black;
@@ -66,7 +62,7 @@ a:hover {
 
 section {
     padding-top: 4vh;
-    height: 96vh;
+    height: auto;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -81,39 +77,17 @@ section {
     text-align: center;
 }
 
-#socials-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 1rem;
-}
-
-.icon {
-    cursor: pointer;
-    height: 2rem;
-    }
-
-.section-container {
-    gap: 4rem;
-    height: 80%;
-}
-
-.section_pic-container {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-}
-
 #contact {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: auto;
 }
 
 .contact-info-upper-container {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     border-radius: 2rem;
     border: darkgrey 0.1rem solid;
     border-color: grey;
@@ -153,9 +127,47 @@ section {
     color: black;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 768px) {
     .navbar a {
-    float: none;
-    width: 100%;
+        float: none;
+        width: 100%;
+    }
+    section {
+        margin: 0 2rem;
+    }
+    .header {
+        padding: 40px;
+    }
+    .header h1 {
+        font-size: 30px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 20px;
+    }
+    .header h1 {
+        font-size: 25px;
+    }
+    .title {
+        font-size: 1.5rem;
+    }
+    .contact-info-upper-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .contact-info-container {
+        flex-direction: column;
+        margin: 1rem 0;
+        text-align: center;
+    }
+    .navbar a {
+        float: none;
+        width: 100%;
     }
 }
